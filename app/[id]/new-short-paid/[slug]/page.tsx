@@ -1,10 +1,8 @@
 "use client";
-import axios from "axios";
 import Head from "next/head";
 import Image from "next/image";
 import Script from "next/script";
-import { use, useEffect, useState } from "react";
-import { NextPageContext } from "next";
+import {  useEffect, useState } from "react";
 import mixpanel from "@/utils/mixpanel";
 import { useParams, usePathname, useSearchParams } from "next/navigation";
 import DATA from "./short_paid_content.json";

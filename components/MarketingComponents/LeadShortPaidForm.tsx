@@ -2,7 +2,7 @@ import axios from "axios";
 import mixpanel from "@/utils/mixpanel";
 import { useRouter } from "next/router";
 import { useForm } from "react-hook-form";
-import { Input } from "@/components/form";
+import  Input  from "@/components/form/Input";
 import { useEffect, useState } from "react";
 import tradwiseIcon from "@/marketingUtils/tradeWiseIcon"
 import BumpOfferModal from "./bump-offer-component/BumpOfferModal";
