@@ -14,10 +14,10 @@ import LeadShortPaidForm from "@/components/MarketingComponents/LeadShortPaidFor
 import { fetchMasterClass } from "@/app/actions";
 
 export default function Page() {
-  const params = useParams();
-  const searchParams = useSearchParams();
-  const slug = (params.slug as string) || "saikat-multibagger";
-  const id = (params.id as string) || "default";
+  // const params = useParams();
+  // const searchParams = useSearchParams();
+  const slug ="saikat-multibagger";
+  const id = "default";
   const [fullDomain, setFullDomain] = useState<any>(0);
   const testType = "paid-normal-bump";
   const pageData = (DATA as schema)[slug];
@@ -30,14 +30,14 @@ export default function Page() {
     
   }, []);
 
-  const source = ((searchParams as any).source as string) || "direct";
+  const source =  "direct";
   const backComment =
     (source as string).toLowerCase() === "google"
       ? "paidMasterClass"
       : "paidBootcamp";
-  const leadComment = ((searchParams as any).comment as string) || "";
+  const leadComment =   "";
 
-  const amount = pageData?.amount || source === "google" ? 49 : 99;
+  const amount =  99;
   const path = usePathname();
 
 
