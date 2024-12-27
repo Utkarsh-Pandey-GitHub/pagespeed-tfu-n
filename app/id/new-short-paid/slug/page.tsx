@@ -16,10 +16,8 @@ import { fetchMasterClass } from "@/app/actions";
 export default function Page() {
   const params = useParams();
   const searchParams = useSearchParams();
-  const slug = (params.slug as string) || "default";
+  const slug = (params.slug as string) || "saikat-multibagger";
   const id = (params.id as string) || "default";
-  const [masterclassData, setMasterclassData] = useState<any>({});
-  const [abTestCounter, setAbTestCounter] = useState<any>(0);
   const [fullDomain, setFullDomain] = useState<any>(0);
   const testType = "paid-normal-bump";
   const pageData = (DATA as schema)[slug];
@@ -29,21 +27,9 @@ export default function Page() {
       const host = window.location.host;
       setFullDomain(`${protocol}//${host}`);
     }
-    fetchMasterClass(id, testType)
-      .then((data: any) => {
-        setAbTestCounter(data.abTestCounter);
-        setMasterclassData(data.masterclassData);
-      })
-      .catch((err) => console.error(err))
-      .finally(() => {
-        console.log(masterclassData);
-      });
+    
   }, []);
-  const activeSlot = masterclassData?.slots?.find(
-    (slot: any) => slot.active === true
-  );
-  const activeTime = formatTime(activeSlot?.startDateTime);
-  const activeDate = formatDate(activeSlot?.startDateTime);
+
   const source = ((searchParams as any).source as string) || "direct";
   const backComment =
     (source as string).toLowerCase() === "google"
@@ -54,14 +40,12 @@ export default function Page() {
   const amount = pageData?.amount || source === "google" ? 49 : 99;
   const path = usePathname();
 
-  const bucket =
-    abTestCounter % 10 == 1 || abTestCounter % 10 == 2 ? "Exp" : "Control";
 
   useEffect(() => {
     mixpanel.track("marketing_page", {
       page_location: window.location.href,
       page_referrer: document.referrer,
-      masterclass: masterclassData?.title,
+      masterclass: "title",
       type: "paid",
       landing_page: "new-short-paid",
       masterclassId: id,
@@ -72,7 +56,7 @@ export default function Page() {
       masterclassId: id,
       landing_page: "new-short-paid",
       abtesttype: "paid-normal-bump",
-      bucket: `${bucket}`,
+      bucket: `Exp`,
     });
   }, []);
 
@@ -134,7 +118,7 @@ export default function Page() {
                 </div>
                 <div>
                   <p className="text-sm">Date</p>
-                  <p className=" font-bold">{activeDate}</p>
+                  <p className=" font-bold">"</p>
                 </div>
               </div>
               <div className="flex bg-green-100 p-2 gap-3 rounded-xl px-6">
@@ -143,14 +127,14 @@ export default function Page() {
                 </div>
                 <div>
                   <p className="text-sm">Time</p>
-                  <p className="font-bold">{activeTime}</p>
+                  <p className="font-bold">""</p>
                 </div>
               </div>
             </div>
           </div>
           <LeadShortPaidForm
             className="m-2 md:p-4"
-            // masterClass={masterclassData}
+            
             buttonStyle="![background:linear-gradient(98.05deg,#4E9F3D_0%,#AFC570_100%)] md:mt-3 mt-1 btn-block hover:scale-105  p-3 text-white font-semibold text-xl"
             inputStyle="md:!py-3 !py-3 px-3"
             amount={pageData.amount || amount}
@@ -160,8 +144,8 @@ export default function Page() {
             customToken={pageData.custom_token}
             fullDomain={fullDomain}
             masterClassId={id}
-            abTestCounter={abTestCounter}
-            isBumpOffer={bucket == "Exp" ? true : false}
+            abTestCounter={0}
+            isBumpOffer={false}
             bumpOfferArray={getOffers(slug)}
             abTestType={testType}
             pageDesc={path ? path : fullDomain}

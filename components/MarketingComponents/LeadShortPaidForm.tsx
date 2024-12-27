@@ -31,7 +31,7 @@ type Inputs = {
 
 export default function LeadShortPaidForm({
   className,
-  masterClass,
+  
   onClick,
   buttonStyle,
   shortPage = false,
@@ -42,7 +42,7 @@ export default function LeadShortPaidForm({
   leadComment,
   customToken,
   fullDomain,
-  masterClassId,
+  masterClassId="cldef8vy500ibh31j7uwukqz0",
   isBumpOffer = false,
   bumpOfferArray,
   abTestCounter,
@@ -51,7 +51,7 @@ export default function LeadShortPaidForm({
   pageDesc,
 }: {
   className?: string;
-  masterClass: any;
+  
   onClick?: any;
   buttonStyle?: string;
   shortPage?: boolean;
@@ -110,11 +110,9 @@ export default function LeadShortPaidForm({
     }
   }, []);
 
-  const slotInfo = masterClass?.slots?.find(
-    (singleSlot: any) => singleSlot.active === true
-  );
+  
 
-  const activeWAGroup = slotInfo?.whatsappGroupLink;
+  const activeWAGroup = `${fullDomain}/${masterClassId}/redirect/thanks-paid`;
 
   const redirectURL = `${fullDomain}/${masterClassId}/redirect/thanks-paid`;
 
@@ -164,8 +162,8 @@ export default function LeadShortPaidForm({
           name,
           source: "direct",
           comment:  "",
-          masterclassSlotId: slotInfo.id,
-          masterclassId: masterClass.id,
+          masterclassSlotId: "cm13i56hp0fgqpcdv38q30b0x",
+          masterclassId: "cldef8vy500ibh31j7uwukqz0",
           ...(bucket && abTestType && {
             payload: {
               bucket,
@@ -190,8 +188,8 @@ export default function LeadShortPaidForm({
           })
           const customEvent = new CustomEvent("lead_form_submitted_paid", {
             detail: {
-              masterclassSlotId: slotInfo.id,
-              masterclassId: masterClass.id,
+              masterclassSlotId: "cm13i56hp0fgqpcdv38q30b0x",
+              masterclassId: "cldef8vy500ibh31j7uwukqz0",
             },
           });
           document.dispatchEvent(customEvent);
@@ -214,11 +212,11 @@ export default function LeadShortPaidForm({
       source: source,
       paymentStage: "razorpay_init",
       payment_type: "discounted",
-      masterClassId: masterClass?.id,
+      masterClassId: "cldef8vy500ibh31j7uwukqz0",
       platform: "tradewise"
     };
     const options = {
-      masterClassId: masterClass?.id || "",
+      masterClassId: "cldef8vy500ibh31j7uwukqz0" ,
       name: name,
       phone: phone,
       email: email,
@@ -248,16 +246,16 @@ export default function LeadShortPaidForm({
           key: process.env.NEXT_PUBLIC_RAZORPAY_KEY,
           amount: Number(amount),
           currency: "INR",
-          name: `Masterclass: ${masterClass?.title}`,
+          name: `Masterclass`,
           description:
-            masterClass?.metaData?.workshopTitle || masterClass.title,
+            "",
           image: tradwiseIcon,
           handler: async function (response: any) {
             mixpanel.track("purchase", {
               page_referrer: document.referrer,
               platform: "tradewise",
               amount: amount,
-              masterClassId: masterClass?.id
+              masterClassId: "cldef8vy500ibh31j7uwukqz0"
             })
             if (selectedOffers) {
               setIsBumpModalOpen(false)
@@ -299,7 +297,7 @@ export default function LeadShortPaidForm({
       source: source,
       paymentStage: "razorpay_init",
       payment_type: "discounted",
-      masterClassId: masterClass?.id,
+      masterClassId: "cldef8vy500ibh31j7uwukqz0",
       platform: "tradewise"
     };
 
@@ -319,8 +317,8 @@ export default function LeadShortPaidForm({
           name,
           source:  "direct",
           comment:  "",
-          masterclassSlotId: slotInfo.id,
-          masterclassId: masterClass.id,
+          masterclassSlotId: "cm13i56hp0fgqpcdv38q30b0x",
+          masterclassId: "cldef8vy500ibh31j7uwukqz0",
           ...(bucket && abTestType && {
             payload: {
               bucket,
@@ -345,8 +343,8 @@ export default function LeadShortPaidForm({
           })
           const customEvent = new CustomEvent("lead_form_submitted_paid", {
             detail: {
-              masterclassSlotId: slotInfo.id,
-              masterclassId: masterClass.id,
+              masterclassSlotId: "cm13i56hp0fgqpcdv38q30b0x",
+              masterclassId: "cldef8vy500ibh31j7uwukqz0",
             },
           });
           document.dispatchEvent(customEvent);
@@ -357,7 +355,7 @@ export default function LeadShortPaidForm({
           gtag("event", "contactFormSubmitted", tagPayload);
           reset();
           const options = {
-            masterClassId: masterClass?.id || "",
+            masterClassId: "cldef8vy500ibh31j7uwukqz0" ,
             name: data.name,
             phone: data.phone,
             email: data.email,
@@ -386,16 +384,15 @@ export default function LeadShortPaidForm({
                 key: process.env.NEXT_PUBLIC_RAZORPAY_KEY,
                 amount: Number(amount),
                 currency: "INR",
-                name: `Masterclass: ${masterClass?.title}`,
-                description:
-                  masterClass?.metaData?.workshopTitle || masterClass.title,
+                name: `Masterclass: ${"cldef8vy500ibh31j7uwukqz0"}`,
+                description: "cldef8vy500ibh31j7uwukqz0",
                 image: tradwiseIcon,
                 handler: async function (response: any) {
                   mixpanel.track("purchase", {
                     page_referrer: document.referrer,
                     platform: "tradewise",
                     amount: amount,
-                    masterClassId: masterClass?.id
+                    masterClassId: "cldef8vy500ibh31j7uwukqz0"
                   })
                   if (selectedOffers) {
                     setIsBumpModalOpen(false)

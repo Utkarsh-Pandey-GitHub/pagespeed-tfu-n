@@ -1,0 +1,106 @@
+{
+  "bk-harmonic": {
+    "slug_Title": "bk-harmonic",
+    "page_title": "B.k | Harmonic Trading",
+    "meta": {
+      "name": "description",
+      "content": "Mastering Harmonic Trading with Mr. B.K. Make ₹5000 Profit with 98% Accurate Strategy",
+      "key": "description"
+    },
+    "heading": "Master Harmonic Trading",
+    "sub_heading": "Master price patterns using harmonics movements",
+    "teacher_name": "MR. B.K",
+    "teacher_exp": "16+ Years of experience"
+  },
+  "hiral-commodity": {
+    "slug_Title": "hiral-commodity",
+    "page_title": "Hiral | Commodity Trading",
+    "meta": {
+      "name": "description",
+      "content": "Mastering Comodity Trading with Mr. B.K. Make ₹5000 Profit with 98% Accurate Strategy",
+      "key": "description"
+    },
+    "heading": "Hidden Treasure Of Commodity Trading",
+    "sub_heading": "Double your profits with commodity trading",
+    "teacher_name": "Ms. Hiral Shah",
+    "teacher_exp": "10+ Years of experience"
+  },
+  "siddhu-forex": {
+    "slug_Title": "siddhu-forex",
+    "page_title": "Siddhu | Forex Trading",
+    "meta": {
+      "name": "description",
+      "content": "Unlock Forex Secret using order Flow with Siddhu Gaddi",
+      "key": "description"
+    },
+    "heading": "Unlock Forex Secret using order Flow",
+    "sub_heading": "Identify the next move of the market using oderflow",
+    "teacher_name": "Mr. Siddhu Gaddi",
+    "teacher_exp": "6+ Years of experience"
+  },
+  "saikat-multibagger": {
+    "slug_Title": "saikat-multibagger",
+    "page_title": "Saikat | Multibagger Investment",
+    "meta": {
+      "name": "description",
+      "content": "Learn from Saikat's expertise in trading, having taught over 10,000+ students and accumulated 13 years of experience.",
+      "key": "description"
+    },
+    "heading": "Masterclass on Multibagger Investment",
+    "sub_heading": "Over 100k learners already enrolled in the masterclass",
+    "teacher_name": "Saikat Halder",
+    "teacher_exp": "6+ years of experience"
+  },
+  "gopal-options": {
+    "slug_Title": "gopal-options",
+    "page_title": "Gopal Verma | Options Trading",
+    "meta": {
+      "name": "description",
+      "content": "Mastering Options Trading with Gopal Verma Make ₹5000 Profit with 98% Accurate Strategy",
+      "key": "description"
+    },
+    "heading": "Recover 50% losses with Lakshman Rekha Strategy",
+    "sub_heading": "Master the Art of Option Trading with Gopal Verma",
+    "teacher_name": "Mr. Gopal Verma",
+    "teacher_exp": "5+ Years of Experience"
+  },
+  "rahul-commodity": {
+    "slug_Title": "rahul-commodity",
+    "page_title": "Masterclass on Commodity Markets with Rahul Gupta",
+    "meta": {
+      "name": "description",
+      "content": "Learn key trading strategies, risk management, and personal growth with Rahul Gupta in this Masterclass on Energy Markets and MCX commodities.",
+      "key": "description"
+    },
+    "heading": "Get (10-15)% Returns in a Month!",
+    "sub_heading": "Master Commodity Trading Strategies with Rahul Gupta",
+    "teacher_name": "Rahul Gupta",
+    "teacher_exp": "5+ Years of Experience in Trading & Finance"
+  },
+  "shanu-swing": {
+    "slug_Title": "shanu-swing",
+    "page_title": "Shanu Goyal | Stock Market Trading",
+    "meta": {
+      "name": "description",
+      "content": "Master the Stock Market with Shanu Goyal's Proven Swing Strategy for Low Risk - High Reward Setup",
+      "key": "description"
+    },
+    "heading": "Mastering Low Risk - High Reward Swing Trading",
+    "sub_heading": "Profitable Swing Trading with Shanu Goyal",
+    "teacher_name": "Mr. Shanu Goyal",
+    "teacher_exp": "IIT Graduate with 9+ Years of Stock Market Experience"
+  },
+  "kushal-algo": {
+    "slug_Title": "kushal-algo",
+    "page_title": "Kushal Jain | Algo Trading Expert",
+    "meta": {
+      "name": "description",
+      "content": "Master Algo Trading with Kushal Jain and learn from his extensive experience in the field.",
+      "key": "description"
+    },
+    "heading": "Learn Algorithmic Trading from an Industry Expert",
+    "sub_heading": "Discover advanced strategies and insights from an algo trading veteran with over a decade of experience.",
+    "teacher_name": "Mr. Kushal Jain",
+    "teacher_exp": "14+ years of experience in trading, managing a 1.5 Crore portfolio, and creating 3000+ algorithms"
+  }
+}
