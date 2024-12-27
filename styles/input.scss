@@ -1,0 +1,65 @@
+input[type="email"],
+input[type="password"],
+input[type="text"]:not(.bare),
+input[type="number"],
+input[type="date"],
+input[type="datetime-local"],
+input[type="tel"],
+select,
+textarea {
+  @apply block;
+  @apply w-full;
+  @apply px-3;
+  @apply py-1.5 rounded-lg;
+  @apply border border-slate-300;
+  @apply text-base;
+  @apply outline-none;
+  @apply placeholder-slate-500;
+
+  &:focus {
+    @apply border-slate-400;
+    @apply ring-2 ring-slate-200;
+  }
+
+  &.input-sm {
+    @apply px-2.5;
+    @apply py-1.5;
+    @apply text-sm;
+  }
+
+  &.input-invalid {
+    @apply border-red-500;
+  }
+
+  &.zoom {
+    @apply border border-blue-600 py-2.5 px-4;
+    @apply rounded-3xl;
+  }
+
+  &.login-input{
+    border-style: none !important; 
+    width: 100% !important; 
+    font-size: 1.25rem !important;
+    line-height: 1.75rem !important; 
+    background: #F0F0F0 !important;
+    height: 50px !important;
+    color: #8B8B8B !important;
+  }
+}
+
+input[disabled] {
+  @apply bg-slate-100;
+}
+
+.input-group {
+  input:nth-child(1) {
+    @apply rounded-tr-none;
+    @apply rounded-br-none;
+  }
+
+  input:nth-child(2) {
+    @apply -ml-0;
+    @apply rounded-tl-none;
+    @apply rounded-bl-none;
+  }
+}

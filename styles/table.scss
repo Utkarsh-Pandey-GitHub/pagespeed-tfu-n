@@ -1,0 +1,38 @@
+
+
+table {
+  @apply min-w-full;
+  @apply divide-y;
+  @apply divide-slate-200;
+  @apply max-w-full;
+
+  thead {
+    @apply bg-transparent;
+
+    th {
+      @apply px-3;
+      @apply py-1.5;
+      @apply text-left;
+      @apply text-xs;
+      @apply font-medium;
+      @apply text-slate-500;
+      @apply uppercase;
+      @apply tracking-wider;
+    }
+  }
+
+  tbody {
+    @apply bg-transparent;
+    @apply divide-y;
+    @apply divide-slate-200;
+
+    tr {
+      @apply hover:bg-slate-50;
+    }
+
+    td {
+      @apply px-3;
+      @apply py-3;
+    }
+  }
+}

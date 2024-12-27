@@ -1,0 +1,114 @@
+{
+  "modules": [
+    {
+      "module_Day": "Day 1 : Schedule",
+      "detailed_Day": [
+        {
+          "heading": "12:00 PM  ~  Swing  Trading By Hemant Sir",
+          "details": [
+            "Introduction to the Top Industry Experts leading the festival.",
+            "Detailed Schedule of the Big Learning Days",
+            "Announcement of Prizes and Rewards."
+          ]
+        },
+        {
+          "heading": "03:00 PM  ~  Commodity Trading Strategy By Hiral Ma’am",
+          "details": [
+            "Eye opener session with Hemant Jain.",
+            "Prabhu Selvaraj, 1 Lakh+ Traders’ Community Leader.",
+            "Kamalpreet Singh’s take on the Wyckoff Strategy."
+          ]
+        },
+        {
+          "heading": "06:00 PM  ~  Intraday Trading Strategy By Pankaj Sir",
+          "details": [
+            "Eye opener session with Hemant Jain.",
+            "Prabhu Selvaraj, 1 Lakh+ Traders’ Community Leader.",
+            "Kamalpreet Singh’s take on the Wyckoff Strategy."
+          ]
+        }
+      ]
+    },
+    {
+      "module_Day": "Day 2 : Schedule",
+      "detailed_Day": [
+        {
+          "heading": "12:00 PM  ~  Profitable Option Intraday Trading Strategy By Bala Sir",
+          "details": [
+            "Learn Ultimate Trading techniques like Order Flow Analysis.",
+            "Trade using the big player’s strategies!",
+            "Find Multibagger Stocks in 5 minutes!"
+          ]
+        },
+        {
+          "heading": "03:00 PM  ~  Multibagger Stock Selection Strategy By Saikat Sir",
+          "details": [
+            "Learn Ultimate Trading techniques like Order Flow Analysis.",
+            "Trade using the big player’s strategies!",
+            "Find Multibagger Stocks in 5 minutes!"
+          ]
+        },
+        {
+          "heading": "06:00 PM  ~  Ultimate Market Mastery Session By Gopal Sir",
+          "details": [
+            "Learn Ultimate Trading techniques like Order Flow Analysis.",
+            "Trade using the big player’s strategies!",
+            "Find Multibagger Stocks in 5 minutes!"
+          ]
+        }
+      ]
+    },
+    {
+      "module_Day": "Day 3 : Monday for Trade Practice",
+      "detailed_Day": [
+        {
+          "heading": "Solve Trading based Assignments",
+          "details": [
+            "Solve assignments to gain practical knowledge.",
+            "Apply session insights to real-world trading."
+          ]
+        }
+      ]
+    },
+    {
+      "module_Day": "Day 4 : Live Trading with best experts",
+      "detailed_Day": [
+        {
+          "heading": "Trade Together in Options",
+          "details": [
+            "Join Jagpreet Singh Narula in placing  profitable trades!",
+            "Have the expert solve all your market problems live!"
+          ]
+        },
+        {
+          "heading": "Trade in Commodities",
+          "details": [
+            "Our expert Hiral Shah will uncover her trading secrets.",
+            "Trade live in the evening market with a profitable trader!",
+            "Learn how to capture a single point and make lacs in a month."
+          ]
+        }
+      ]
+    },
+    {
+      "module_Day": "Day 5 : All Day Intraday",
+      "detailed_Day": [
+        {
+          "heading": "Learn systematic trading in stocks & options",
+          "details": [
+            "Master trading from Basics to Breakthroughs.",
+            "Analyze the Laxman Rekha to trade Options"
+          ]
+        },
+        {
+          "heading": "Best Intraday Indicator",
+          "details": [
+            "Grab the Lord Loren Scalping Setup.",
+            "Learn profitable strategies with intraday scalping",
+            "Pankaj Sahu shares his secret setup!"
+          ]
+        }
+      ]
+    }
+  ]
+}

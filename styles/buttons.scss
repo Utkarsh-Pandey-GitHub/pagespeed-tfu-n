@@ -1,0 +1,329 @@
+button, .btn {
+  @apply inline-flex;
+  @apply items-center;
+  @apply justify-center;
+  @apply px-5;
+  @apply py-2;
+  @apply border;
+  @apply text-sm;
+  @apply font-semibold;
+  @apply rounded-lg;
+  @apply text-slate-900;
+  @apply bg-white;
+  @apply transition;
+  @apply ease-in-out;
+  @apply duration-150;
+  @apply outline-none;
+  @apply cursor-pointer;
+
+  @apply hover:text-slate-600;
+  @apply hover:no-underline;
+
+  @apply focus:outline-none;
+  @apply focus:text-slate-600;
+
+  &[disabled] {
+    @apply opacity-60;
+    @apply cursor-auto;
+  }
+
+  // &:focus {
+  //   @apply ring-2 ring-blue-500 ring-offset-2 shadow-none;
+  // }
+
+  &:active {
+    @apply transform scale-95;
+  }
+
+  &.btn-block {
+    @apply w-full;
+  }
+
+  &.btn-pill {
+    @apply rounded-full;
+  }
+
+  &.btn-lg {
+    @apply px-6;
+    @apply py-3;
+    @apply text-lg;
+    @apply font-normal;
+  }
+
+  &.btn-icon {
+    @apply px-3;
+    @apply py-1.5;
+    @apply text-lg;
+    @apply font-normal;
+  }
+
+  &.btn-sm {
+    @apply px-2;
+    @apply py-1;
+    @apply text-sm;
+    @apply font-semibold;
+  }
+
+  &.btn-xs {
+    @apply px-1;
+    @apply py-0.5;
+    @apply text-xs;
+    @apply font-normal;
+  }
+
+  &.btn-outline {
+    @apply bg-transparent;
+    @apply text-slate-200;
+    @apply border-slate-200;
+
+    @apply hover:bg-slate-200 hover:text-slate-800;
+
+    &.active {
+      @apply text-primary;
+      @apply border-primary;
+    }
+  }
+
+  &.btn-primary-outline {
+    @apply bg-transparent;
+    @apply text-primary;
+    @apply border-primary;
+
+    @apply hover:text-white;
+    @apply hover:bg-primary;
+  }
+
+  &.btn-blue {
+    @apply bg-blue-600 border-blue-600 text-white shadow-primary/20;
+  }
+  &.btn-indigo {
+    @apply bg-indigo-600 border-indigo-600 text-white shadow-primary/20;
+  }
+
+  &.btn-success {
+    @apply bg-green-500;
+    @apply border-green-500;
+    @apply text-white;
+
+    @apply hover:bg-green-600;
+  }
+
+  &.btn-info {
+    @apply bg-yellow-500;
+    @apply text-white;
+    @apply border-yellow-500;
+
+    @apply hover:text-white;
+    @apply hover:bg-yellow-600;
+  }
+
+  &.btn-primary {
+    @apply bg-primary;
+    @apply border-transparent shadow-primary;
+    @apply text-white;
+
+    @apply hover:opacity-75;
+  }
+
+  &.btn-danger {
+    @apply bg-red-500 bg-opacity-10;
+    @apply border-transparent;
+    @apply text-red-500;
+
+    @apply hover:opacity-75;
+  }
+
+  &.btn-dark {
+    @apply text-white;
+    @apply bg-black;
+    @apply border-black;
+
+    @apply hover:bg-slate-900;
+  }
+
+  &.btn-dark-outline {
+    @apply text-black;
+    @apply bg-white;
+    @apply border-black;
+
+    @apply hover:bg-slate-900 hover:text-white;
+  }
+
+  &.btn-translucent {
+    @apply bg-black bg-opacity-5 hover:bg-opacity-10 border-black border-opacity-5;
+  }
+
+  &.btn-whatsapp {
+    @apply text-green-900 bg-[#3ad366] border-[#3ad366];
+  }
+
+  &.btn-google {
+    @apply text-white;
+    background-color: #4286f5;
+    border-color: #4286f5;
+  }
+
+  &.btn-golden {
+    position: relative;
+    // z-index: 1;
+  }
+
+  &.btn-golden::after {
+    content: "";
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    bottom: -8px;
+    left: -8px;
+    z-index: -1;
+    border-radius: 15px;
+    background: linear-gradient(
+      to right,
+      rgb(158, 128, 68),
+      rgb(244, 219, 165),
+      rgb(158, 128, 68)
+    ); /* Customize the gradient colors and direction as desired */
+    // opacity: 0.5; /* Optional: Set the opacity of the gradient */
+  }
+  &.btn-golden::before {
+    content: "VIP";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(158, 128, 68);
+    font-weight: 800;
+    font-size: smaller;
+    position: absolute;
+    top: 8px;
+    right: -35px;
+    width: 90px;
+    height: 15px;
+    transform: rotate(45deg);
+    background: rgb(244, 219, 165);
+  }
+
+  &.btn-vip {
+    border-radius: 100px;
+    background: linear-gradient(
+      90deg,
+      rgba(219, 188, 23, 1) 0%,
+      rgba(232, 212, 107, 1) 25%,
+      rgba(219, 188, 23, 1) 50%,
+      rgba(232, 212, 107, 1) 75%,
+      rgba(219, 188, 23, 1) 100%
+    );
+    border: none;
+    font-weight: 400;
+  }
+
+  &.btn-tricolor {
+    background: rgb(254, 134, 29);
+    background: linear-gradient(
+      -25deg,
+      rgba(254, 134, 29, 1) 0%,
+      rgba(255, 255, 255, 1) 49%,
+      rgba(31, 244, 31, 1) 100%
+    );
+    color: black !important;
+    border: none !important;
+  }
+
+  &.lk-focus-toggle-button {
+    display: absolute;
+    color: white;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    border-radius: 50px !important;
+    padding: 2px 8px !important;
+  }
+
+  &.btn-login {
+    margin-top: 2.5rem;
+    width: 100%;
+    height: 50px;
+  }
+
+  &.btn-link {
+    color: #3b82f6;
+    border: none;
+    cursor: pointer;
+    padding: 0px;
+    margin: 0px;
+    font-weight: 500;
+  }
+
+  &.btn-link:hover {
+    text-decoration: underline;
+  }
+
+  &.btn-join {
+    background: #f01515;
+    border: none;
+    color: white;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+
+  &.btn-container {
+    width: 200px;
+    height: 100%;
+    margin: 0 auto 0;
+    background: #fff;
+  }
+
+  &.black-pulse-button {
+    position: relative;
+    display: block;
+    font-weight: 800;
+    font-weight: light;
+    font-family: "Trebuchet MS", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: -1px;
+    color: white;
+    border: none;
+    background: #000;
+    cursor: pointer;
+    z-index: 50;
+    box-shadow: 0 0 0 0 rgba(#000, 1);
+    -webkit-animation: pulse 1.5s infinite;
+  }
+
+  &.pulse-button {
+    position: relative;
+    display: block;
+    font-weight: 800;
+    font-weight: light;
+    font-family: "Trebuchet MS", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: -1px;
+    color: white;
+    border: none;
+    background: #1990ff;
+    cursor: pointer;
+    z-index: 50;
+    box-shadow: 0 0 0 0 rgba(#1990ff, 1);
+    -webkit-animation: pulse 1.5s infinite;
+  }
+  &.pulse-button:hover {
+    -webkit-animation: none;
+  }
+
+  @keyframes pulse {
+    0% {
+      transform: (scale(0.98));
+    }
+    70% {
+      transform: (scale(1));
+      box-shadow: 0 0 0 20px rgba(#1990ff, 0);
+    }
+    100% {
+      transform: (scale(0.98));
+      box-shadow: 0 0 0 0 rgba(#5a99d4, 0);
+    }
+  }
+}
